@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300" fill="none">
+  <rect width="200" height="300" fill="#E1D9BC" stroke="#30364F" stroke-width="2" rx="4"/>
+  <text x="100" y="140" text-anchor="middle" fill="#30364F" font-family="Georgia, serif" font-size="14">Book cover</text>
+  <text x="100" y="160" text-anchor="middle" fill="#ACBAC4" font-family="Georgia, serif" font-size="12">Book, Please!</text>
+</svg>

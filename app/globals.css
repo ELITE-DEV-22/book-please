@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #30364F;
+  --blue-grey: #ACBAC4;
+  --beige: #E1D9BC;
+  --cream: #F0F0DB;
+}
+
+body {
+  @apply bg-cream text-navy antialiased;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  @apply outline-2 outline-offset-2 outline-navy;
+}
