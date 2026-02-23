@@ -53,14 +53,12 @@ export default function BookCard({ book, index = 0, showCategory = true }: BookC
       <div className="flex flex-col sm:flex-row">
         <Link href={`/reviews/${book.slug}`} className="block sm:w-32 flex-shrink-0 p-4 sm:p-5">
           <div className="relative aspect-[2/3] max-w-[140px] mx-auto sm:mx-0 rounded-lg overflow-hidden bg-blue-grey/20 shadow-soft">
-            <Image
-              src={book.coverImage}
-              alt={`Cover of ${book.title} by ${book.author}`}
-              fill
-              sizes="(max-width: 640px) 140px, 128px"
-              className="object-cover group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
-            />
+          <img
+          src={book.coverImage}
+          alt={`Cover of ${book.title} by ${book.author}`}
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+        />
           </div>
         </Link>
         <div className="flex-1 p-4 sm:p-5 sm:pl-0 flex flex-col">
