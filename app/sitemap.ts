@@ -1,23 +1,21 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://book-please.vercel.app';
-
   return [
     {
-      url: baseUrl,
+      url: 'https://book-please.vercel.app/',
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/reviews`,
+      url: 'https://book-please.vercel.app/reviews',
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/guides`,
+      url: 'https://book-please.vercel.app/guides',
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/about`,
+      url: 'https://book-please.vercel.app/about',
       lastModified: new Date(),
     },
   ];
