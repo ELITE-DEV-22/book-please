@@ -7,11 +7,11 @@ import { buildBreadcrumbSchema } from '@/lib/schema';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bookplease.com';
 
 export const metadata: Metadata = {
-  title: 'Reading Guides & Book Lists',
+  title: 'Discover Your Next Favorite Books',
   description:
     'High-converting reading guides and money pages from Book, Please! Discover the best books to read in 2026, self-help essentials, thrillers, and more.',
   openGraph: {
-    title: 'Reading Guides & Book Lists | Book, Please!',
+    title: 'Discover Your Next Favorite Books | Book, Please!',
     description:
       'SEO-optimized book guides and lists to help you find the best books to read in every category—fiction, self-help, business, and more.',
   },
@@ -34,8 +34,7 @@ export default function GuidesPage() {
             Reading Guides &amp; Money Pages
           </h1>
           <p className="text-blue-grey text-lg max-w-2xl mt-2">
-            Premium, long-form guides that surface the best books to read in every category—built
-            to rank, to convert, and to actually help readers.
+          Curated reading guides featuring the best books across every genre thoughtfully selected to inspire, inform, and help you choose with confidence.
           </p>
           <div className="mt-4 h-px w-20 bg-beige rounded-full" aria-hidden />
         </header>
