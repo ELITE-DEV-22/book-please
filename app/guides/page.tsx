@@ -31,7 +31,7 @@ export default function GuidesPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
         <header className="mb-8 sm:mb-10">
           <h1 className="font-serif text-3xl sm:text-4xl font-bold text-navy">
-            Reading Guides &amp; Money Pages
+            Discover Your Next Favorite Books
           </h1>
           <p className="text-blue-grey text-lg max-w-2xl mt-2">
           Curated reading guides featuring the best books across every genre thoughtfully selected to inspire, inform, and help you choose with confidence.
