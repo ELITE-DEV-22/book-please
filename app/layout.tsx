@@ -18,6 +18,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://book-please.vercel.app"),
+  applicationName: "Book, Please!",
   title: {
     default: 'Book, Please! | Trusted Book Reviews & Reading Guides',
     template: '%s | Book, Please!',
