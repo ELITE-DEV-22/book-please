@@ -46,7 +46,7 @@ export default function ReviewsClient({ initialReviews }: { initialReviews: Revi
         {filtered.length} review{filtered.length !== 1 ? 's' : ''} found
       </p>
 
-      <div className="grid gap-6">
+      <div className="grid gap-6 sm:grid-cols-2">
         {pageBooks.map((book, i) => (
           <BookCard key={book.slug} book={book} index={i} showCategory />
         ))}

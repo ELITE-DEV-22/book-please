@@ -96,10 +96,15 @@ export default function HomePage() {
       <AdPlaceholder label="Ad – After hero" className="max-w-6xl mx-auto px-4 sm:px-6 mb-12" />
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12" aria-labelledby="featured-reviews">
-        <h2 id="featured-reviews" className="font-serif text-3xl font-bold text-navy mb-8">
-          Featured Reviews
-        </h2>
-        <div className="grid gap-6">
+        <header className="mb-6 sm:mb-8 text-center">
+          <h2 id="featured-reviews" className="font-serif text-3xl font-bold text-navy">
+            Featured Reviews
+          </h2>
+          <p className="text-blue-grey mt-2 max-w-2xl mx-auto">
+            A rotating selection of books we think are especially worth your time right now.
+          </p>
+        </header>
+        <div className="grid gap-6 sm:grid-cols-2">
           {featured.map((book, i) => (
             <BookCard key={book.slug} book={book} index={i} showCategory />
           ))}
@@ -115,19 +120,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 bg-beige/30 rounded-3xl mx-4 sm:mx-6" aria-labelledby="categories">
-        <h2 id="categories" className="font-serif text-3xl font-bold text-navy mb-6">
-          Browse by Category
-        </h2>
-        <p className="text-blue-grey mb-8 max-w-2xl">
-          Find the best books to read in fiction, mystery thriller reviews, self-help, business book summaries, and more.
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <section
+        className="max-w-6xl mx-auto px-4 sm:px-6 py-12 bg-beige/30 rounded-3xl"
+        aria-labelledby="categories"
+      >
+        <header className="text-center mb-6">
+          <h2 id="categories" className="font-serif text-3xl font-bold text-navy">
+            Browse by Category
+          </h2>
+          <p className="text-blue-grey mt-2 max-w-2xl mx-auto">
+            Find the best books to read in fiction, mystery &amp; thriller, self-help, business, and
+            more.
+          </p>
+        </header>
+        <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center">
           {CATEGORIES.map((cat) => (
             <Link
               key={cat.id}
               href={`/reviews?category=${cat.id}`}
-              className="block p-4 rounded-xl bg-cream border border-beige/60 shadow-soft hover:shadow-soft-lg hover:border-beige transition-all text-navy font-medium"
+              className="w-full text-center p-4 rounded-xl bg-cream border border-beige/60 shadow-soft hover:shadow-soft-lg hover:border-beige transition-all text-navy font-medium"
             >
               {cat.name}
             </Link>

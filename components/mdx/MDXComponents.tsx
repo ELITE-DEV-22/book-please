@@ -1,5 +1,6 @@
 import type { MDXComponents } from 'mdx/types';
 import Link from 'next/link';
+import GuideBook from '../GuideBook';
 
 /**
  * Tailwind-styled components for MDX content.
@@ -89,6 +90,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </pre>
     ),
+    // Custom MDX component for rich book recommendation cards in guides
+    GuideBook,
     ...components,
   };
 }
